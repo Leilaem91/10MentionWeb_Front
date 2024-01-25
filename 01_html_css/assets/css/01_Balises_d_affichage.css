@@ -10,8 +10,9 @@
 
 */
 
+
 p {
-    color: blue;
+    color: #792a5b;
 }
 
 /* 
@@ -22,6 +23,10 @@ p {
         ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
         -notation avec mots clés -> red, green, bleu ... 
 */
+pre { color: rgb(106, 40, 89)
+}
+/*  Je sélectionne deux éléments en même temps avec une virgule */
 
 
+span {color: green;}
 
