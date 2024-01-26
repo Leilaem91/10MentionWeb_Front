@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(244, 183, 195);
+}
+
+a{
+    text-decoration: none;
+ /* Tzxt_decorationc: permet de changer la décoration du texte, avec la valeur none je désactive le surlignement */
+ color: rgb(255, 72, 103);
+}
+/* Une pseudo classe est un mot clé préfixé par deux points, qui s'ajoute au sélécteur pour appliquer un style à un éléments dans un cas particulier */
+/* Hover: désigne un objet survolé par le curseur de la souris, ça peut être un lien ou n'importe quel éléments html  */
+a:hover {
+text-decoration: underline;
+color: rgb(255, 105, 172);
+background-color: rgb(255, 255, 255);
+}
+
+/* La pseudo classe " visited " désigne un lien dont la page cible a deja été visité */
+a:visited {
+    color: aqua;
+}
