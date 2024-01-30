@@ -34,14 +34,14 @@ border-radius: 10px;
     background-color: #3C0753;
 }
 
-div,main {
+div.main {
 border: 2px solid #3C0753;
 padding: 20px 50px;
 margin-top: 10px;
 
 }
 
-div.section1 {
+div.section1,div.section2 {
 
     text-align: center;
 }
@@ -50,4 +50,49 @@ div.section1 img {
     border-radius: 20px;
 }
 
+div.section2 {
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+padding: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+color: #EEEDEB;
+}
 
+div.section2 p{
+    display:inline-block;
+    border: solid 2px blueviolet;
+    width: 33%;
+    padding: 20px;
+    background-color: black;
+    text-align: left;
+
+}
+
+div.piedDePage {
+border: solid 2px violet;
+margin-top: 20px;
+/* text-align:center ; */
+}
+
+div.piedDePage ul {
+    display: inline-block;
+width: 25;
+list-style: none;
+
+
+}
+
+div.piedDePage ul li {
+    margin-bottom: 20px;
+
+}
+div.piedDePage ul li a {
+color: #3C0753;
+background-color: #D9A9DB;
+padding: 8px 12px;
+border-radius: 3px;
+font-weight: bold;
+text-decoration: none;
+
+}
