@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+    
+body ul
+    {
+  padding: 50px;
+    }
+
+
+main :first-child {
+    color: white;
+background-color: rgb(255, 187, 0);
+border: 2px;
+text-align: left;
+}
+
+main :nth-child(2) {
+    color: white;
+background-color: rgb(0, 38, 255);
+border: 2px;
+text-align: left;
+}
+
+main :nth-child(3) {
+    color: white;
+background-color: rgb(34, 143, 28);
+border: 2px;
+text-align: left;
+}

@@ -1,0 +1,117 @@
+/* Feuille de style pour la page Flexbox */
+
+p{font-size: 20px;
+
+}
+
+div {font-weight: bolder;
+border: 1px solid black;
+text-align: center;
+
+}
+
+span {font-weight: bold;
+color: darkmagenta;
+
+} 
+
+
+
+.style div{
+width: 200px;
+height: 150px;
+color:white;
+line-height: 150px;
+/* Line-height: nous permet de définir l'espacement entre les lignes d'un paragraphe dans un élément */
+/* Dans le cas que l'on a un seul mot dans un élément on peut l'utiliser afin de le centrer sur l'axe vertical */
+}
+
+/* b-Ajout du flex */
+
+.style :first-child
+ {
+background-color: orange;
+
+ }
+
+ .style :nth-child(2)
+ {
+background-color: blue;
+
+ }
+
+.style :nth-child(3)
+ {
+background-color: green;
+
+ }
+
+
+
+ .style div{
+    width: 200px;
+    height: 150px;
+    color:white;
+    line-height: 150px;
+    /* Line-height: nous permet de définir l'espacement entre les lignes d'un paragraphe dans un élément */
+    /* Dans le cas que l'on a un seul mot dans un élément on peut l'utiliser afin de le centrer sur l'axe vertical */
+    }
+
+ .style :first-child
+ {
+background-color: orange;
+
+ }
+
+ .style :nth-child(2)
+ {
+background-color: blue;
+
+ }
+
+ .style :nth-child(3)
+ {
+background-color: green;
+
+ }
+
+ #conteneurB {
+    display: flex;
+ }
+
+#conteneurC {
+display: flex;
+flex-direction: row;
+
+}
+
+#conteneurD {
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+ #conteneurE {
+        display: flex;
+        flex-direction: row-reverse;
+        
+        }
+        
+        #conteneurF {
+            display: flex;
+            flex-direction: column-reverse;
+            
+            }  
+
+
+
+
+
+
+
+
+
+
+
+
+

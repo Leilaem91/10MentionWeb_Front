@@ -1,0 +1,106 @@
+/*  
+    Afin déviter la modification de la taille totale d'un élément par les bordures et les marge interne, on utilise la propriété box-sizing avec la  valeur "border-box", cela permet d'inclure à la fois les bordures et le padding dans la taille totale de l'élément.
+
+    La propriété box-sizing en CSS permet de définir comment la taille totale d'un élément est calculée.
+    Elle peut avoir deux valeurs: 
+        - content-box : valeur par défaut, la largeur et la hauteur définies pour un élément ne tiennent compte que du contenu réel à l'intérieur de l'élément.
+        - border-box : Avec cette valeur, la largeur et la hauteur définies pour un élément incluent à la fois le contenu, les bordures et le padding
+    
+    En générale en définie la propriété box-sizing avec la valeur border-box pour l'ensemble du document en utilisant le sélécteur universel (*) => tout les éléments de la page utilisent le modèle de boîte border-box par défaut
+*/
+
+/* *****************LE CSS GENERAL***************************************** */
+*{
+box-sizing: border-box;
+text-decoration: none;
+}
+
+body {
+    background-color: aliceblue;
+    text-align: center;
+
+}
+/* Style pour le header */
+header {
+
+border: 2px solid #3C0753;
+padding: 20px;
+}
+
+h1 {
+text-transform: uppercase;
+color: #3C0753;
+font-size: 50px;
+}
+
+nav a {
+color: aliceblue;
+
+display: inline-block;
+width: 33%;
+
+padding: 5px 0;
+}
+
+nav a:hover {
+background-color: #3C0753;
+}
+
+a {
+    background-color: violet;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+h1 a {background-color: aliceblue;}
+
+main {
+margin-top: 10px;
+padding: 20px 50px;
+border: 2px solid #3C0753;
+}
+
+ /* Pseudo class : first-child désigne le premier élément enfant */
+main :first-child img   {
+    border-radius: 50px;}
+
+
+   /* pseudo class: nth-child(2) désigne le deuxieme élément enfant dans un élément parent */
+    main section:nth-child(2) {
+background-image:  url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+padding: 100px;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+color: white
+    }
+
+main section:nth-child(2) article {
+
+    display: inline-block;
+border: violet 1px solid;
+width: 30%;
+padding: 20px;
+text-align: left;
+background-color: black;
+}
+
+footer ul {
+display: inline-block;
+width: 33%;
+list-style: none;
+}
+
+footer ul li {
+margin-bottom:20px ;
+}
+
+footer a{
+color: #3C0753;
+padding: 8px 12px;
+}
+
+
+footer {margin-top: 20px;
+    border: #3C0753 solid 2px;}
+    
