@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="sahar ferchichi : Page Flexbox">
-    <meta name="author" content="sahar Ferchichi">
+    <meta name="description" content="Leila embark : maquette">
+    <meta name="author" content="Leila embark">
     <link rel="stylesheet" href="../exo-css/MaquetteexoFinal.css">
 
     <title>Maquetteexo2</title>
 </head>
 <body>
 
-    </section>
-
     <header>
+
         <img src="../../Maquettes_Exos/Maquettes_Exos/logo.jpg" alt="Logo du site représentant un coeur et une patte de chat">
+
+       
+        
+        <h1>BIENVENUE SUR NOTRE PAGE</h1>
 
         <nav>
             <ul>
@@ -22,51 +25,68 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">A propos</a></li>
             </ul>
-        </nav>
-
-        <h1>BIENVENUE SUR NOTRE PAGE</h1>
-        
-        <div id="conteneur1">
-            <div>Titre de ma section 1</div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur beatae molestias similique nam, illo asperiores, cumque quidem error quod recusandae, officia ducimus reprehenderit libero alias eum nostrum maiores quis. Nam!</p>
-        </div>
-    
-        <div id="conteneur2">
-            <div>Titre de ma section 2</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis sit porro minus magni vero alias aspernatur, explicabo molestias nulla error velit repellendus autem quaerat eveniet fugiat veniam possimus aliquam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt veritatis magni ratione aperiam, consequatur, quo, mollitia aliquam tempore eligendi optio at tenetur reprehenderit ex nisi delectus eos beatae cupiditate.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus neque quos explicabo. Dolore, necessitatibus voluptatum delectus commodi ea fuga quia voluptatibus, officiis tempore quaerat hic excepturi non doloremque itaque dolorem.</p>
-        </div>
-
-
-
-        <div id="conteneur3">
-            <div>
-                <ul>
-                    <li>Hello</li>
-                    <li>Bonjour</li>
-                    <li>Guten Morgen</li>
-                    <li>Sabah el kheir</li>
-                    <li>Buenos dias</li>
-                    <li>Dobro jutro</li>
-                    <li>Buongiorno</li>
-                    <li>günaydin</li>
-                </ul>
-            </div>
-        </div>
-    
-
-
-
-
-
-
-
-
-
-
+        </nav>   
 
     </header>
+
+
+    <section id="conteneur1">  
+        <!-- La section contient les trois éléments: section 1 ; section 2 ; "section 3" -->
+
+        
+        <!-- Le conteneur 1 Contient également les trois sections -->
+        <div id="conteneur2">
+        <!-- Le conteneur 2 Contient la section 1 et 2, il est leurs parents -->
+    
+
+            <article id="section1"> <h2>Titre de ma section 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero repellendus iure magni! Iusto recusandae nihil harum assumenda deleniti asperiores vero necessitatibus rem, nostrum quod corrupti illum eius magni? Cupiditate!</p>
+            </article>
+        
+            
+            <article id="section2">
+
+                 <h2>Titre de ma section 2</h2>
+
+                <div id="flex">
+
+                <div> 
+
+                    <h3>Titre de mon article</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis sit porro minus magni vero alias aspernatur, explicabo molestias nulla error velit repellendus autem quaerat eveniet fugiat veniam possimus aliquam?</p>
+                </div>
+
+                <div>
+                    <h3>Titre de mon article</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nesciunt veritatis magni ratione aperiam, consequatur, quo, mollitia aliquam tempore eligendi optio at tenetur reprehenderit ex nisi delectus eos beatae cupiditate.</p>
+                </div>
+
+                <div>
+                    <h3>Titre de mon article</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus neque quos explicabo. Dolore, necessitatibus voluptatum delectus commodi ea fuga quia voluptatibus, officiis tempore quaerat hic excepturi non doloremque itaque dolorem.</p>
+                </div>
+            </div>
+
+            </article>
+
+        </div>
+
+        <div id="conteneur3">
+        <!-- Le conteneur 3 contient uniquement le conteneur 3 -->
+
+            <article id="section3">
+                <a href="#">Hello</a>
+                <a href="#">Bonjour</a>
+                <a href="#">Guten Morgen</a>
+                <a href="#">Sabah el kheir</a>
+                <a href="#">Buenos dias</a>
+                <a href="#">Dobro jutro</a>
+                <a href="#">Buongiorno</a>
+                <a href="#">günaydin</a>
+            </article>
+
+        </div>
+    </section>
 
 
     
