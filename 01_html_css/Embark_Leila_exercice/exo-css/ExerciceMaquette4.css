@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/*  Style pour le header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom:  4mm ridge 
+#FF3366;
+
+}
+
+.logo img {    
+    width: 150px;
+    height: 150px;
+}
