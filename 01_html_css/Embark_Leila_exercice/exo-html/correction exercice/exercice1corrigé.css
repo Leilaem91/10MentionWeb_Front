@@ -89,10 +89,15 @@ h3{
 }
 #zoning2 div div p {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
+aside:nth-child(2) {
+    order: 3;
+}
 
 
 

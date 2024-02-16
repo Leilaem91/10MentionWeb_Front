@@ -1,0 +1,59 @@
+/* @Font-face: c'est une règle (at-rule) css qui permet de définir des polices personnalisés pour être utilisée dans une page web */
+
+@font-face {
+    font-family: "Jacquarda Bastarda 9";
+    src: url("../Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf");
+}
+
+
+
+body{
+    background-color: azure;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #4D4DC8;
+    font-family: "Jacquarda Bastarda 9";
+    font-weight: 400;
+    font-style: normal;
+    }
+
+form {
+
+    border: 2px solid black;
+    padding: 10px 15px 25px 20px;
+}
+
+
+fieldset {
+    border: thick double #0a5f81;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+legend {
+    color: steelblue;
+    background-color: #fff;
+    border: 3px solid slateblue;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+div {
+    padding: 10px 0;
+}
+  
+.envoie {
+    display: flex;
+    justify-content: space-around;
+}
+
+.envoie input {
+    background-color: cadetblue;
+    padding: 33px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+}
