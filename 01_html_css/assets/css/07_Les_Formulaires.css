@@ -1,9 +1,15 @@
 /* @Font-face: c'est une règle (at-rule) css qui permet de définir des polices personnalisés pour être utilisée dans une page web */
 
-@font-face {
+/* @font-face {
     font-family: "Jacquarda Bastarda 9";
     src: url("../Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf");
-}
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+
+/* @import: C'est une règle at-rule CSS qui est utilisée pour importer des ressources externes, telles que des feuilles de style, des polices, etc., dans une feuille de style CSS */
+
 
 
 

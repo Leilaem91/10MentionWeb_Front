@@ -1,0 +1,41 @@
+/* ***********************Style pour la paga des tableau************************* */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFE7E7;
+}
+
+h1 {
+    text-align: center;
+}
+
+caption {
+    color: #6e2142;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table {
+    border: 3px solid #6e2142;
+    width: 90%;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: #FFF6E9;
+    border-collapse: collapse;
+    /* Par défaut la bordure contient 2 trai, pour que le trait soit soit unique on utilise la propriété "border-collapse" avec la valur "collapse" */
+    text-align: center;
+}
+
+th, td {
+    border: 3px solid #6e2142;
+    padding: 10px;
+}
+
+thead, tfoot {
+    background-color: #be7575;
+}
