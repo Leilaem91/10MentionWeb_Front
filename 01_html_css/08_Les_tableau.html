@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>Un tableau, pour les données "tabulaires"</h1>
+    <!-- ********************************TABLEAU 1******************************************** -->
     <table>
         <!-- La balise table définit le début d'un tableau -->
          <caption>ventes de la semaine</caption>
@@ -72,6 +73,279 @@
             </tr>
          </tfoot>
     </table>
+
+    <!-- ************************************TABLEAU 2******************************************** -->
+
+    <table id="president">
+        <caption>Tableau des présidents</caption>
+        <thead>
+            <tr>
+                <th>Nom du président</th>
+                <th>Numéro de téléphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chirac</td>
+                <td>01.23.45.56.78</td>
+            </tr>
+            <tr>
+                <td>Hollande</td>
+                <td>01.25.23.26.24</td>
+            </tr>
+            <tr>
+                <td>Macron</td>
+                <td>01.66.66.66.66</td>
+            </tr>
+        </tbody>
+    </table>
+    
+     <!-- ************************************TABLEAU 3******************************************** -->
+<br><br><br>
+    <h2>Rowspan / Colspan</h2>
+    <p>
+        "<code>Rowspan</code>" est un attribut qui permet d'indiquer le nombres de lignes qu'une cellule <code>&lt;td></code> de tableau <code> &lt;table> </code> peut couvrir. Cet attribut est utile si vous souhaitez qu'une cellule s'étende verticalement sur plusieurs lignes. Exemple si on met <code>rowspan="5"</code>, alors notre cellule occupera l'espace de 5 cellules verticalement. Cependant, il est important de noter que lorsqu'on utilise cette manipulation, il faut retirer les <em>td</em> correspondant des autres lignes.
+    </p>
+    
+    <br><br>
+
+    <table id="demorowspan">
+        <tr>
+            <td>Nom</td>
+            <td>Embark</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Email</td>
+            <td>email.email@free.fr</td>
+        </tr>
+        <tr>
+            <!-- <td>Numero tel</td> -->
+            <td>email.email@free.fr</td>
+        </tr>
+    </table>
+
+    <br><br><br> 
+
+    <p>
+        "<code>colspan</code>" est un attribut qui permet d'indiquer le nombre de colonnes qu’une cellule <code>&lt;td></code> de tableau <code>&lt;table></code> doit couvrir. Cet attribut est utile lorsque vous souhaitez qu’une cellule s’étende horizontalement sur plusieurs colonnes .Exemple si on met <code>colspan="3"</code>, alors notre cellule occupera l'espace de 3 cellules horizontalement. 
+    </p>
+
+    <table id="democolspan">
+        <caption>Les langages web</caption>
+        <tr>
+            <td colspan="3">Langages de front</td>
+            <!-- <td>Langages de front</td>
+            <td>Langages de front</td> -->
+            <td colspan="3">Langages de back</td>
+            <!-- <td>Langages de back</td>
+            <td>Langages de back</td> -->
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+            <td>SQL</td>
+            <td>NoSQL</td>
+            <td>PHP</td>
+        </tr>
+    </table>
+
+    <br><br><br><br><br>
+
+    <h2>Exercice 1</h2>
+
+    <table id="exo1">
+        
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td colspan="3" ></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="noir"></td>
+            <td colspan="2"></td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="noir"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="noir"></td>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3" ></td>
+            <td class="noir"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+            
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br>
+
+
+    <h2>Exercice 2</h2>
+
+    <table id="exo2">
+        <caption>Exo pixel coeur </caption>
+        <tr>
+            <td colspan="7"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2" class="rouge borderT"></td>
+            <td></td>
+            <td colspan="2" class="rouge borderT"></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2" class="rouge"></td>
+            <td></td>
+            <td colspan="2" class="rouge"></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="5" class="rouge"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="rouge"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="5" class="rouge"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td colspan="3" class="rouge"></td>
+            <td colspan="2"></td>
+            
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td class="rouge"></td>
+            <td colspan="3"></td>
+            
+        </tr>
+        <tr>
+            <td colspan="7"></td>
+            
+        </tr>
+        
+    </table>
+<br><br><br><br><br><br><br><br>
+
+<h2>Rowspn exercice coeur</h2>
+
+<table id="exoRowspan">
+    <caption>Exemple de tableau avec <em>rowspan</em></caption>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td rowspan="5" class="red borderLeft"></td>
+      <td rowspan="6" class="red borderRight"></td>
+      <td></td>
+      <td rowspan="6" class="red borderLeft"></td>
+      <td rowspan="5" class="red borderRight"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td rowspan="5" class="red"></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <!-- <td></td> -->
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <!-- <td></td> -->
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <br><br><br><br><br><br><br><br>
+        
+
+
+
+
+
+
 
     
 </body>

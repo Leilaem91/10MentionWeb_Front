@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    color: brown;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #FFE7E7;
+}
+
+table {
+    border: 3px solid #6e2142;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #FFF6E9;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 50px;
+}
+
+.ligne1 {
+    background-color: black;
+}
+
+
+/* *************************EXERCICE2 **********************************  */
+
+.ligne2 {
+    background-color: red;
+}
+
+.border {
+    background-color: red;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+

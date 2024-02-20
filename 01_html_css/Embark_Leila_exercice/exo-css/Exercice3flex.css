@@ -1,0 +1,60 @@
+/* *************************Style pour la page Exercice3flex**************************** */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLE POUR LE HEADER */
+
+#Element1 {
+    display: flex;
+}
+
+#Element1 div:first-child{
+    display: flex;
+    background-color: #5F9EA0;
+    width: 33%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#Element1 div:nth-child(2) {
+    display: flex;
+    background-color: #008B8B;
+    width: 33%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Element1 div:last-child {
+    display: flex;
+    background-color: #00CED1;
+    width: 33%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding-top: 15px;
+    display: flex;
+    background-color: #FFEBCD ;
+    height: 50px;
+   
+}
+
+nav a {
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
