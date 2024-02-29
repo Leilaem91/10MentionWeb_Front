@@ -1,0 +1,61 @@
+/* Feuille de style avec le reset */
+@import url(reset.css);
+/* Lien vers google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    --color_black: #191919;
+    --color_white: #fff;
+    --font_lora: "Lora", serif;
+}
+
+body {
+    background-color:var(--color_black);
+    color: var(--color_white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a, h1 {
+    font-family: var(--font_lora);
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    /* Dans le header j'applique le display avec la valeur flec afin de gérer l'emplacement de mes éléments sur l'axe principale (axe horizontale) et sur l'axe secondaire*/
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    border-bottom: .1rem solid rgba(255, 255, 255, 1);
+    box-shadow: 0 .4rem .8rem rgb(0, 0, 0, .5);
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+}
+
+header > a {
+    /* J'applique le flex afin de centrer l'image dans l'élément a  */
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+header nav a {
+    font-size: 1.8rem;
+    color: gray;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-left: 4rem;
+    scale: 1;
+    transition: all linear 0.2s;
+}
+
+header nav a:hover {
+    color: var(--color_white);
+    scale: 1.2;
+}

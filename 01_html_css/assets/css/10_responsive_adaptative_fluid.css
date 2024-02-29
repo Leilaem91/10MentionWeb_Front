@@ -37,6 +37,10 @@
 	font-size: 62.5%;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-weight: bold;
 }
@@ -108,3 +112,95 @@ h2 {
 	
 	}
 }
+
+/* **************************** Site adaptatif ************************************ */
+
+/* Grâce au design adaptatif, l'utilisateur peut consulter le même site web avec un confort visuel équivalent, sans avoir à zoomer, défiler horizontalement, ou effectuer d'autres manipulations susceptibles de dégrader l'expérience utilisateur. C'est précisément pour cette raison que cette technique offre de très bonnes performances. */
+
+
+.adaptative {
+	border: 2px solid black;
+	height: 100%;
+	padding: 1.5rem;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width:991.99px) {
+	.adaptative h2 {
+		font-size: 1.5rem;
+	}
+	.adaptative p {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+	.adaptative h2 {
+		font-size: 2rem;
+	}
+	.adaptative p {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.adaptative h2 {
+		font-size: 2.5rem;
+	}
+	.adaptative p {
+		font-size: 2rem;
+	}
+	.adaptative {
+		height: 100%;
+	}
+}
+
+/* **************************** Design fluide ************************************ */
+/* 
+    Le design fluide est une technique où le site s'adapte automatiquement à la résolution de l'utilisateur. Pour cela, il suffit que tous vos blocs et éléments soient dimensionnés en unités fluides.
+*/
+
+.fluid {
+	border: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+	padding: 30px;
+	justify-content: center;
+}
+
+.fluid h2 {
+	width: 100%;
+}
+
+.fluid div:nth-child(2) {
+	background-color: #f1b4bb;
+	padding: 20px;
+	width: 60%;
+}
+
+.fluid div:nth-child(3) {
+	background-color: #facbea;
+	padding: 20px;
+	width: 40%;
+}
+
+@media screen and (max-width: 626px) {
+	.fluid img {
+		width: 100%;
+	}
+}
+
+.fluid p {
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 626px) {
+	.fluid img, .fluid div {
+		width: 100% !important;
+	}
+}
+
+
+	
+
