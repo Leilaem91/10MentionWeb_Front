@@ -38,7 +38,7 @@ header div img {
 }
 
 h1 {
-    font-size: 'philosopher', 'sans-serif';
+    font-family: 'Philosopher', sans-serif;
     font-size: 2.1rem;
     color: var(--ocre);
     font-weight: bolder;
@@ -96,6 +96,7 @@ section p {
     font-size: 1.7rem;
     padding: 2rem 0;
     line-height: 2rem;
+    text-align: justify;
 }
 
 aside ol {
@@ -161,7 +162,203 @@ footer {
     .col-sm-12 {
         width: 100%;
     }
+
+    @media screen and (min-width:768px) {
+        .col-md-1 {
+            width: 8.333333%;
+        }
     
+        .col-md-2 {
+            width: 16.666666%;
+        }
+    
+        .col-md-3 {
+            width: 25%;
+        }
+    
+        .col-md-4 {
+            width: 33.333333%;
+        }
+    
+        .col-md-1 {
+            width: 41.666666%;
+        }
+    
+        .col-md-6 {
+            width: 50%;
+        }
+    
+        .col-md-7 {
+            width: 58.333333%;
+        }
+    
+        .col-md-8 {
+            width: 66.666666%;
+        }
+    
+        .col-md-9 {
+            width: 75%;
+        }
+    
+        .col-md-10 {
+            width: 83.333333%;
+        }
+    
+        .col-md-11 {
+            width: 91.666666%;
+        }
+    
+        .col-md-12 {
+            width: 100%;
+        }
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header {
+        justify-content: center;
+    }
+    
+    nav a {
+        margin: 0;
+    }
+
+    main {
+        border-bottom: 1px var(--gris-clair) solid;
+    }
+
+    section h2 {
+        padding: 2.5rem;
+    }
+
+    section {
+        justify-content: center;
+    }
+
+    section p {
+        text-align: left;
+    }
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem;
+    }
+
+    aside h3 {
+        font-size: 1.7rem;
+        color: var(--chocolat);
+        font-weight: bold;
+        padding-left: 1rem;
+        border-bottom: 1px var(--gris-clair) solid;
+        padding: 0 0 1rem 1rem;
+    }
+
+    aside ol {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+
+    hr {
+        margin-bottom: 1rem;
+    }
+
+    aside div:nth-child(2) div {
+        padding-top: 1.5rem;
+    } 
+}
+
+    @media screen and (min-width:1200px) {
+        .col-xl-1 {
+            width: 8.333333%;
+        }
+        .col-xl-2 {
+            width: 16.666666%;
+        }
+        .col-xl-3 {
+            width: 25%;
+        }
+        .col-xl-4 {
+            width: 33.333333%;
+        }
+        .col-xl-1 {
+            width: 41.666666%;
+        }
+        .col-xl-6 {
+            width: 50%;
+        }
+        .col-xl-7 {
+            width: 58.333333%;
+        }
+        .col-xl-8 {
+            width: 66.666666%;
+        }
+        .col-xl-9 {
+            width: 75%;
+        }
+        .col-xl-10 {
+            width: 83.333333%;
+        }
+        .col-xl-11 {
+            width: 91.666666%;
+        }
+        .col-xl-12 {
+            width: 100%;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        nav {
+            justify-content: center;
+        }
+
+        nav a {
+            background-color: transparent;
+
+        }
+
+        header div {
+            flex-direction: row;
+        }
+
+        h1 {
+            font-size: 2.5rem !important;
+            padding: 0 !important;
+        }
+
+        main {
+            border-top: 1px solid var(--gris-clair);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        section + hr {
+
+            /* c'est un selecteur adjacent. Il permet de ne sélectionner que l'élément qui est immédiatement précédé par le premier élément ciblé */
+            display: none;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 771px;
+        }
+
+        aside div {
+            margin-bottom: 10rem ;
+        }
+
+        aside ol {
+            font-size: 2rem;
+        }
 }
 
 
