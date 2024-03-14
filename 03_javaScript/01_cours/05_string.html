@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les strings en JS</title>
+</head>
+<body>
+
+    <script>
+        // // -------------------
+
+        // // - LES STRINGS ET CONCATENATION
+
+        // // -------------------
+
+
+        // Nous pouvons initialiser une chaine de caractères de plusieurs façon
+
+        // Avec des guillemets simple (simples quotes)
+        const PRENOM = 'Sahar';
+        // avec des guillemets doubles (doubles quotes)
+        const NOM = "Ferchichi";
+        // avec simples quotes et backslash (ou anti-slash) : Permet d'échapper un caractère dans le string
+        const ADRESSE = 'J\'habite à Saint-michel-sur-orge';
+
+        // je suis Leile embark, j'habite a saint-michel sur orge
+
+        document.write('je suis ' + PRENOM +" "+ NOM +", " +ADRESSE );
+        const PRENOM2 = "Marc" , NOM2 = "ISAAC";
+        document.write("Je suis" + PRENOM2 + " " + NOM2 + `<br>`);
+
+        //avec les backquotes (``)altgr plus 7
+        //  Bonjour vous êtes les bienvenues : Marc et Sahar 
+        let bienvenue = ` Bonjour vous êtes les bienvenues : ${PRENOM2} et ${PRENOM}` + `<br>`;
+
+        document.write(bienvenue);
+        // les backquotes vous permet d'insérer du JS dans un string
+
+        //Exercice 
+        // realiser un prompt demandant son âge à son utilisateur, récupérer cette donnée et l'utiliser pour afficher ce message:
+            // vous avez XX ans!
+
+            let age = prompt ('Entrez votre âge!') ;
+            document.write (`Vous avez :${age} ans ` + `<br>`);
+
+            ///////////////////////////////////
+            //  Le " = " au niveau des strings 
+            let fruits = "pommes";
+            // document.write (fruits); 
+            fruits+= `Fraise`;
+            fruits+= `Mangue`;
+            document.write (fruits);
+            // Contrairement au "=" d'affectation qui remplace la valeur de la variable, j'utilise ici += qui va ajouter la nouvelle valeur à la valeur de la variable 
+
+            //--------------------------------
+            // Convertir un string to number
+            // --------------------------------
+            document.write (`<br>`);
+            let unNombre="24";
+            document.write (typeof(unNombre));
+            // Pour convertir le string "24" en nombre 24
+            unNombre = parseFloat(unNombre);
+            document.write(typeof(unNombre))
+
+             //--------------------------------
+            // Convertir un number vers un string
+            // --------------------------------
+
+            unNombre = unNombre.toString();
+            // toString permet de convertir un nombre entier ou décimale en string
+            document.write(typeof(unNombre))
+
+
+
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
