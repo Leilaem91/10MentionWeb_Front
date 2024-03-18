@@ -247,7 +247,87 @@
                  document.write(` ${array4Dimensions[0].coordonnees.mdp[1]} <br> `);
 
                 
+        // //------------------------------------
+        // // Les propriétés et les méthodes des tableaux
+        // //------------------------------------
 
+        let couleurs =["Rose", "Rouge", "Noir", "Bleu"];
+        console.log(couleurs.length);
+        // length est une propriété qui permet d'afficher le nombre d'élément que contient mon tableau
+        // Je stock la valeur dans une variables
+        let longueurTableau = couleurs.length;
+        console.log(longueurTableau); 
+
+        //-----
+                // Ajouter un ou plusieurs élément en fin de mon tableau
+        // ----
+
+        couleurs.push("Violet");
+        console.log(couleurs);
+        console.log(couleurs.length);
+
+
+        //------------------
+        // Supprimer le dernier éléments de mon tableau
+        // -----------------
+
+        couleurs.pop();
+        console.log(couleurs);
+        console.log(couleurs.length);
+
+        //------------------
+        // Ajouter un ou plusieurs éléments au début du tableau
+        // -----------------
+
+        couleurs.unshift("Vert","Orange");
+        console.log(couleurs);
+        console.log(couleurs.length);
+
+        
+        //------------------
+        // Ajouter, supprimer ou remplacer des éléments n'importe ou dans mon tableau 
+        // -----------------
+        // La méthode splice() va prendre trois arguments :
+        // - une position de départ : à partir d'où commence le changement
+        // - le nombre d'éléments à remplacer ou à enlever
+        // - Les éléments à ajouter au tableau
+        couleurs.splice(1,0,"Jaune","Blanc")
+        console.log(couleurs);
+        console.log(couleurs.length);
+
+        /*
+            Pour découper un tableau et en créer un autre, j'utilise la méthode slice()
+            // premier argument : La position de départ : où doit commencer la découpe de notre tableau de départ/ si la position passée est un nombre négatif -> le début de la découpe sera calculé à partir de la fin du tableau de départ/ si aucune position de départ n'est passée, la découpe commencera depuis le début du tableau de départ.
+            // Deuxième argument : la position où doit s'arrêter la découpe du tableau de départ/ si la position passée est un nombre négatif, alors la fin de la découpe sera calculée à partir de la fin du tableau de départ / si aucune position de fin n'est passée, alors on récupérera le tableau de départ jusqu'à la fin pour créer notre nouveau tableau
+        */
+
+        let joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+        let joursTravailSahar = joursSemaine.slice(0,5)
+        console.log(joursTravailSahar); 
+        console.log(joursSemaine);
+        let joursSemaineColombbus = joursTravailSahar;
+        console.log(joursSemaineColombbus);
+        joursTravailSahar.splice(2,1);
+        console.log(joursSemaineColombbus);
+
+        // Pour une chaîne de caractères en concaténant les différentes valeurs d'un tableau
+        let concatJourSemaine = joursSemaine.join(`-`);
+        document.write(concatJourSemaine);
+
+        // Pour déterminer si un tableau contient une valeur précise 
+
+        let verif = joursSemaine.includes('Jeudi');
+        // Attention : la méthode includes est sensibles à la casse 
+        console.log(verif);
+        console.log(typeof verif);
+        // Pour fusionner plusieurs tableaux entre eux et en créer un nouveau 
+        let totalTableau = joursSemaines.concat(couleurs,myArray, myArray2);
+        document.write(totalTableau);
+        console.log(totalTableau);
+        
+
+
+        
 
 
 
