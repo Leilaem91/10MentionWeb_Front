@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions en JS</title>
+</head>
+
+<body>
+
+    <script>
+
+        document.write("<h2>Les opérateurs de comparaison pour les structures conditionnelle </h2>");
+        // Les opérateurs de comparaison pour les structures conditionnelle
+
+        /*
+            >  strictement supérieur
+            <  strictement inférieur
+            >= supérieur ou égale 
+            <= inférieur ou égale
+            ==  pour faire une comparaison de valeur // Il permet de vérifier que les VALUERS de 2 variables sont identiques
+            === pour faire une sompariason de valeur et de type // signifie "STRICTEMENT Égale À" // Il permet de vérifier la VALEUR ET le TYPE 
+            != différent de en valeur 
+            !== STRICTEMENT différent de (VALEUR ET TYPE)
+        */
+
+        let br = '<br>';
+        let nbr1 = 1, nbr2 = 3;
+
+        document.write(nbr1 > nbr2); // false
+        document.write(br);
+        document.write(nbr1 >= nbr2); // false
+        document.write(br);
+        document.write(nbr1 <= nbr2); // true
+
+        let nbr3 = 2, nbr4 = "2";
+        document.write(br);
+        document.write(nbr3 > nbr4); // false
+        document.write(br);
+        document.write(nbr3 == nbr4); // true
+        document.write(br);
+        document.write(nbr3 === nbr4); // false
+
+        document.write("<h2>Opérateur logiques </h2>");
+
+        // Opérateurs logiques
+
+        /*
+            AND  -> &&
+            OR   -> || (altgr + 6)
+            NOT  -> !
+
+        */
+
+        // Opérateur AND : il evalue le résultat en TRUE si les expressions sont TRUE, si l'une des deux expressions testé est FALSE alors le résultat sera FALSE
+        document.write(br);
+
+        document.write(true && true); // true
+        document.write(br);
+        document.write(true && false); // false
+        document.write(br);
+        document.write(false && false); // flase
+
+        // Opérateur OR : il evalue  le resultat en TRUE si une ou deux expressions sont true, si les deux expression sont FALSE alors le resultat sera FALSE
+
+        document.write(br);
+        document.write(true || true); // true
+        document.write(br);
+        document.write(true || false); // true
+        document.write(br);
+        document.write(false || false); //false
+
+        // Opérateur NOT : Il transofrme ce qui est TRUE en FALSE et ce qui est FAlSE en TRUE
+        document.write(br);
+        document.write(!true); // false
+        document.write(br);
+        document.write(!false); // true
+        document.write(br);
+
+        document.write("<h2>Structure conditionnelle if, else if, else</h2>");
+
+        //-----------------------------
+        // SYNTAXE
+        //-----------------------------
+
+        let condition = true;
+        // if
+
+        if (condition) {
+
+            /* le code si la condition est VRAIE */
+        }
+        if (condition) {
+
+            /* le code si la condition est VRAIE */
+        }
+        if (condition) {
+
+            /* le code si la condition est VRAIE */
+        }
+
+
+        //----------------------------------------------------------------------------------------
+
+        // if else
+
+        if (condition) {
+            /* le code si la condition est VRAIE*/
+
+        } else {
+
+            /* le code si la condition est FAUSSE */
+        }
+
+        //-------------------------------------------------------------------------------------------
+        // if else if else
+
+        if (condition) {
+
+            /* le code si la condition est VRAIE*/
+
+        } else if (condition) {
+
+            /* le code si la condition est VRAIE*/
+
+        } else if (condition) {
+
+            /* le code si la condition est VRAIE*/
+
+        }
+        else if (condition) {
+
+            /* le code si la condition est VRAIE*/
+
+        }
+        else {
+            /* le code si toutes les autres condition sont FAUSSES*/
+        }
+        //-----------------------------------------------------------------
+
+        let age = "test";
+
+        if (age > 18) { //vrai
+
+            // document.write("Vous êtes majeur <br>");
+        }
+        if (age >= 20) { // vrai
+
+            // document.write("Vous êtes majeur et plus vieux");
+
+        }
+        if (age < 18) { // false
+
+            // document.write("Vous êtes mineur");
+        }
+
+//------------------------------------------------
+        if (age >= 20 ) { //false
+
+            document.write("Vous êtes majeur et plus vieux");
+
+        } else if (age > 18) { // false
+            document.write("Vous êtes majeur <br>");
+            
+
+        } else if (age < 18) { // true
+
+            document.write("Vous êtes mineur");
+
+        }
+        else {
+            document.write("Vous êtes QUI ?");
+            document.write(br);
+        }
+
+
+        ///////////////////////////
+        // EXERCICE
+        ///////////////////////////
+        //a=10 / b=5 / c=2
+        //On doit comparer A et B, si A est supérieur à , on affiche que A est bien supérieur à B, sinon on affiche que A est inférieur à B.
+        //Si A est supérieur à B et que B est supérieur a C, on affiche OK pour les deux conditions.
+        //Si A = 9 ou que B est inférieur à 9, on affiche OK pour au moins l'une des deux car sinon les deux conditions sont fausses 
+
+      
+        //  CORRECTION EXERCICE 
+
+        let a = 10, b = 5, c = 2;
+        
+        if(a>b) {
+            document.write("A est bien supérieur à B ");
+            document.write(br);
+        } else {
+            document.write("A est inferieur  B")
+            document.write(br);
+        }
+
+
+        if (a>b && b>c) { // True && true -> True
+            document.write("OK Pour les deux conditions");
+            document.write(br);
+         } else {
+            document.write ("Une de ces deux conditions est fausses");
+            document.write(br);
+         }
+
+
+         if (a==9 || b<9) {
+            document.write("OK pour au moins des deux conditions");
+            document.write(br);
+         } else {
+            document.write("Les deux conditions sont fausses");
+            document.write(br);
+         }
+
+         if (a==8){ // false
+            document.write ("a est égale à 8")
+         } else if (a != 10 ) { // false
+            document.write ("a est différent de 10")
+
+         }else {//
+            document.write ("Tout le monde est faux")
+         }
+
+
+
+
+         //------------------------------------------------------------------------------------------------------------------------
+         
+         document.write(br);
+         
+         if (a==10){ // true
+
+            document.write ("a est égale à 10")
+
+         } else if (a>b ) { // true
+            document.write ("a est supérieur a b")
+
+         }else {//
+            document.write ("Tout le monde est faux")
+         }
+
+
+         document.write(br);
+        //  Avec que des if les conditions sont toutes éxécutés est dès que l'une des conditions est vraie le résultats est affichés 
+
+        if (a==10) {
+            document.write("A est égale a 10 <br>")
+        } 
+        if ( a>b) {
+            document.write ("a est supérieur a B  <br>")
+        }
+        if (a<b) {
+            document.write ("a est inférieur a B <br>")
+        }
+
+        // ------------------------------------------------------------------------------------------------------------------
+        //  La condition ternaire nous permet de faire une vérification mais sur une seule ligne 
+
+        let meteo ="pluie";
+        // if (meteo =="pluie") {
+        //     document.write("Prends un parapluie <br>");
+        // } else {
+        //     document.write("Mets un short <br>");
+        // }
+
+        (meteo=="pluie") ? document.write ("Prends un parapluie <br>") : document.write("Mets un short <br>") ; 
+
+        // Est ce que météo est égale à pluie ? Si oui, prends un parapluie, sinon : mets un short 
+        //  ? = if 
+        //  : = else
+
+
+        let monAge = prompt ("Quel est votre âge");
+        document.write ((monAge >=18) ? "Vous êtes majeur" : "Vous êtes mineur");
+
+
+        // (monAge> 18) ? document.write ("Tu est majeur <br>") : document.write ("Tu est mineur <br>");
+
+
+        let ternaire= (meteo=="pluie") ? ("Prends un parapluie <br>") : ("Mets un short <br>") ; 
+        document.write(ternaire);
+// ---------------------------------------------------------------------------------------------------------------------------------------
+
+        //  La condition switch 
+
+        document.write(br);
+        
+        // La condition switch
+
+        let valeur = 5 + 10;
+        switch (valeur) {
+            case 5:
+                document.write("La valeur est égale à 5 <br>")
+                break;
+            case 10:
+                document.write("La valeur est égale à 10 <br>")
+                break;
+            case 1:
+                document.write("La valeur est égale à 15 <br>")
+                break;
+        
+            default:
+                document.write("La valeur est indeterminée <br>")
+                break;
+        }
+        //----------------------------------------------
+
+        let jour = prompt("entrez un jour de la semaineS");
+
+        // switch (jour) {
+        //     case "Lundi":
+        //         document.write(" Mardi <br>")
+        //         break;
+        //     case "Mardi":
+        //         document.write("Mercredi <br>")
+        //         break;
+        //     case "Mercredi":
+        //         document.write("Jeudi <br>")
+        //         break;
+        //     case "Jeudi":
+        //         document.write("Vendredi <br>")
+        //         break;
+        //     case "Vendredi":
+        //         document.write("Samedi <br>")
+        //         break;
+        
+        //     default:
+        //         document.write("Dimanche <br>")
+        //         break;
+        // }
+
+        if (jour == "lundi") {
+            document.write(" mardi <br>")
+        } else if(jour == "mardi"){
+            document.write(" mercredi <br>")
+        } else if(jour == "mercredi") {
+            document.write(" jeudi <br>")
+        } else if(jour == "jeudi") {
+            document.write(" vendredi <br>")
+        } else if(jour == "vendredi") {
+            document.write(" samedi <br>")
+        } else if(jour == "samedi") {
+            document.write(" dimanche <br>")
+        } else {
+            document.write(" dimanche <br>")
+        } ;
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
