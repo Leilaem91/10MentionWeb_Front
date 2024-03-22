@@ -22,30 +22,60 @@ let tab1 = [" leila", "henri", "Frank", "Maureen", "Fabien"];
 let tab2 = [" embark", "lele", "lala", "lili", "lolo"];
 let tab3 = [22, 25,78, 56 ,42];
 
-for (let i = 0; i < 5; i++) {
-        document.write (tab1.lenght[i]+tab2[i]+tab3[i]+ "<br>");
+for (let i =0 ; i < tab1.length ; i++) {
+        document.write (`${tab1[i]} ${tab2[i]} ${tab3[i]} <br>`);
     }
+
+
+    //  Deuxième façon de faire 
+
+    let tab4 = [tab0, tab1, tab2];
+    for (let i =0 ; k < tab4[0].length ; k++) {
+        document.write (` ${tab4[0][k]} ${tab4[1][k]}  ${tab4 [2] [k]} <br>`);
+    }
+
 
 
     // Exercice 6 
 
-    let tours = ["tour1", "tour2", "tour3", "tour4", "tour5", "tour6","tour7","tour8", "tour9","tour10"];
-       document.write (tour1 [0]);
-       document.write (tour2 [1]);
-       document.write (tour3 [2]);
-       document.write (tour4 [3]);
-       document.write (tour5 [4]);
-       document.write (tour6 [5]);
-       document.write (tour7 [6]);
-       document.write (tour8 [7]);
-       document.write (tour9 [8]);
-       document.write (tour10 [9]);
+   for (let t=1 ; t<10 ; t++) {
+     if (t< 2) {
+        document.write ("le manège démarre" + "<br>")
+     }
+     if (t <= 10) {
+        document.write ( " c'est le tour n°" + t + "<br>")
+     }
+     if (t> 9) { // 10
+        document.write ("le manège s'arrête")
 
-       for (let i = 0; i < tour.length; i++) { 
-        document.write ("<p>${tour[i]}</p>")
-    }
+     }
+   }
 
+   // Exercice 7
+        /* 
+            Créer un script qui permet de :
+                - récupérer la moyenne de BAC à votre utilisateur
+                - vérifier si l'utilisateur a bien renseigner un nombre, 
+                si un nombre :
+                    => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                    => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                    => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+                    => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                Si ce n'est pas un nombre :
+                    =>afficher  "Vous n\avez pas saisi de nombre !"   
+        */
 
+        let moyenne= prompt ("Entrez un nombre");
+        if (moyenne= 0> 10) {
+        document.write ("Tu est recalé !")
+        }
+        if (moyenne= 10< 11 >11) {
+            document.write ("Tu passes, sans mention !")
+        }
+        if (moyenne= 12< 20>20) {
+            document.write ("Reçu avec mentions ! ")
+        }
+        else (alert ("Vous n'avez pas saisie de nombre"))
 
 
 
