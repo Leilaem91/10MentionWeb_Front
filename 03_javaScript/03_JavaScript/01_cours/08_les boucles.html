@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les boucles en JS</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Les boucles nous permettent d'exécuter une ou plusieurs instructions un certain nombre de fois
+        // Une boucle respecte une condition
+        // Tant que cette condition est respectée, nous allons exécuter des instructions en boucle.
+        // La plupart du temps, nous utilisons les boucles pour parcourir chaque élément d'un tableau
+        // Il y a différents types de boucles, les plus utilisées sont la boucle "FOR" et la boucle "WHILE"
+
+        //-------------------------
+        // Boucle for
+        //-------------------------
+
+        /* 
+            SYNTAXE 
+                for( 3 arguments : initialisation ; condition de continuité ; incrémentation){
+                    
+                    code à exécuter
+
+                }
+
+        */
+
+
+        // i = 0    j'initialise le départ de la boucle à 0
+        // i <   tant que la valeur de i est inférieure ou égale à 10
+        // i++    j'incrémente un tour de boucle
+        // En gros je donne l'instruction de faire un tour de boucle supplémentaire tant que la valeur de i n'est pas égale ou supérieure à 10
+        for (let i = 0; i < 10; i++) {
+
+            document.write(`<p> <strong> Il est 14h5${i} </strong> </p>`)
+
+        }
+
+        // Je compte deux par deux
+        for (let i = 0; i < 10; i += 2) { // i = i+2
+
+            document.write(`<p> ${i} </p>`)
+
+        }
+
+        // Je boucle sur un tableau
+
+        let jours = ["Lundi ", "Mardi ", "Mercredi ", "Jeudi ", "Vendredi ", "Samedi "];
+                    //0         //1        //2          //3       //4          //5     //6
+        document.write(jours[0]);
+        document.write(jours[1]);
+        document.write(jours[2]);
+        document.write(jours[3]);
+        document.write(jours[4]);
+        // jours.length = 6
+
+        for (let i = 0; i < jours.length; i++) { // 
+
+            document.write(`<p> ${jours[i]} </p>`)
+
+        }
+
+        //-------------------------
+        // Boucle while (tant que)
+        //-------------------------
+
+
+        /* 
+            SYNTAXE 
+
+                // initialisation de la variable
+                while(expression qui vaut true ou false){
+                    
+                    code à exécuter tant que l'expression vaut true
+
+                    // incrémentation de la variable
+
+                }
+
+        */
+
+        let j = 0; // j'initialise une variable à 0
+        while (j <= 5) { // tant que j est inférieur ou égale à 5
+
+            document.write(` ${j} / `); // j'exécute l'instruction
+
+            j++ // à chaque tour de boucle, j'incrémente la variable
+            
+        }
+
+
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

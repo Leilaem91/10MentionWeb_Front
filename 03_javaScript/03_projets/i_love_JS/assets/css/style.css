@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+:root {
+    font-size: 62.5%;
+    --font-lobster: "Lobster", sans-serif;
+    --font-Shadows-Into: "Shadows Into Light", cursive;
+    --font-general: Arial, Helvetica, sans-serif;
+}
+
+/* Barre de navigation desktop */
+
+.navbar-desktop {
+    background-color: #fff;
+    font-weight: bolder;
+    height: 8rem;
+    
+
+}
+
+.navbar-desktop a {
+    font-family: var(--font-Shadows-Into);
+    font-size: 2rem;
+    padding: 5rem;
+    color: #61b3ff;
+}
+
+.switch {
+    width: 90px;
+    height: 30px;
+    background-color: #61b3ff;
+    border-radius: 15px;
+    border: 1px solid #61b3ff;
+}
